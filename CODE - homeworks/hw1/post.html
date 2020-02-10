@@ -1,0 +1,247 @@
+<!-- Homework #1 - Styling Blog Post Using Bootstrap -->
+
+<!DOCTYPE html>
+<html>
+
+	<head>
+		
+		<!-- Link to Bootstrap CSS libraries, so we can access directly -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+		<!-- Google Fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
+
+		<link href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+		<link href="https://fonts.googleapis.com/css?family=Vidaloka&display=swap" rel="stylesheet">
+
+		<link href="https://fonts.googleapis.com/css?family=Nanum+Myeongjo&display=swap" rel="stylesheet">
+
+		<link href="https://fonts.googleapis.com/css?family=Poiret+One&display=swap" rel="stylesheet">
+
+		<link href="https://fonts.googleapis.com/css?family=Staatliches&display=swap" rel="stylesheet">
+
+		<link href="https://fonts.googleapis.com/css?family=Notable&display=swap" rel="stylesheet">
+
+		<link href="https://fonts.googleapis.com/css?family=Kosugi&display=swap" rel="stylesheet">
+
+		<link href="https://fonts.googleapis.com/css?family=Alike&display=swap" rel="stylesheet">
+
+		<link href="https://fonts.googleapis.com/css?family=Bowlby+One&display=swap" rel="stylesheet">
+
+		<!-- Header used for About Section of Blog template -->
+		<link href="https://fonts.googleapis.com/css?family=Wire+One&display=swap" rel="stylesheet">
+
+		<!-- content used for About Section for Blog template -->
+		<link href="https://fonts.googleapis.com/css?family=Libre+Caslon+Display&display=swap" rel="stylesheet">
+
+		<link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet">
+
+		<link href="https://fonts.googleapis.com/css?family=Pontano+Sans&display=swap" rel="stylesheet">
+
+		<link href="https://fonts.googleapis.com/css?family=Girassol&display=swap" rel="stylesheet">
+
+		<link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+
+		<link href="https://fonts.googleapis.com/css?family=Staatliches&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Sulphur+Point&display=swap" rel="stylesheet">
+
+
+        <!-- STYLE SHEET-->
+		<style>	
+			
+			/*font specifically for large headers*/
+			h1{
+				font-family: 'Staatliches', cursive;
+
+			}
+
+			h4{
+				font-family: 'Wire One', sans-serif;
+			}
+
+			p{
+				font-family: 'Nanum Myeongjo', serif;
+			}
+
+			h3{
+				font-family: 'Alike', serif;
+				
+			}
+
+			div.a{
+				text-align: center;
+			}
+
+
+			#menuButton{
+				font-family: 'Sulphur Point', sans-serif;
+				padding-left: 45%
+
+			}
+
+			#aboutMeSection{
+				font-family: 'Libre Caslon Display', serif;
+				padding-left: 15px;
+
+			}
+
+
+			/*to be applied to portrait image in About section*/
+			#thumbnail {
+				width: 15%
+
+			}
+
+			#blogImage{
+				width: 48%
+			}
+
+
+			#BGlighter{
+				background-color: #f5f3ed
+			}
+
+			#aboutMeParagraph{
+				font-family: 'Pontano Sans', sans-serif;
+			}
+		</style>
+	</head>
+
+	<!------------------------------------------------------------------------------->
+	<body>
+		
+
+		<!-- nav menu -->
+		
+		<nav class='navbar fixed-top navbar-expand-lg navbar-dark bg-dark' id="top-navbar">
+			<ul class="nav navbar-nav ml-auto">
+				<li id="menuButton"> <a href='#'> Home </a> </li>
+			</ul>
+		</nav>
+		
+
+		<!------------------------------------------------------------------------------->
+
+		<!-- CONTAINER: Title of Blog -->
+		<div class='container-fluid p-1'>
+			<section class='container-fluid p-3'>
+				<div>
+					<br>
+					<h1 class="p-4"> What does it mean to be a winner? </h1>
+			
+
+					<img class="img-fluid" src='images/org.jpg'>
+
+				</div>
+			</section>
+		</div>
+			
+		
+		<!------------------------------------------------------------------------------->
+
+
+		<!-- CONTAINER: Intro Paragraph -->
+		<div class='container-fluid p-1 a'>
+			<section class='container-fluid p-1'>
+				<h3>So, this thing that's really important...</h3>
+				<p>
+					<br>
+					hfa;hfg;aof;dfhgdfhg;odffkjsdfglkdsjfgjsdfgjds;gsdjfgd;sfgjdsfgsd;fgjdsfghsdghdf;ghgoadfhg;ogfohdfghdsgherturhgdfhgsdkhfg
+
+					dfgsdfgsdfgsdfgsdfgsdfgsdfgsdfgdsfgsdfgsdfgsdgfdsfg
+				</p>
+		    </section>
+		</div>
+		
+
+		<!-- CONTAINER: 1st Paragraph (topic) -->
+		<div class='container-fluid p-1 a' id="BGlighter">
+			<section class='container-fluid p-1'>
+				<br>
+				<h3>My Point #1</h3>
+				<p>
+					hfa;hfg;aof;dfhgdfhg;odfhgoadfhg;ogfohdfghdsgherturhgdfhgsdkhfg
+				</p>
+				
+				<img class='img-fluid p-3' src="images/pt1.png" id="blogImage">
+				
+			</section>
+		</div>
+
+
+
+
+		<!-- CONTAINER: 2nd Paragraph (topic) -->
+		<div class = 'container-fluid p-1 a'>
+			<section class='container-fluid p-1'>
+				<br>
+				<h3>My Point #2</h3>
+				<p>
+					hfa;hfg;aof;dfhgdfhg;odfhgoadfhg;ogfohdfghdsgherturhgdfhgsdkhfg
+				</p>
+				
+				<img class='img-fluid p-3' src="images/image2.jpg" id="blogImage">
+			
+			</section>
+		</div>
+
+		
+
+
+		<!-- CONTAINER: 3rd Paragraph (topic) -->
+		<div class='container-fluid p-1 a' id="BGlighter">
+			<section class='container-fluid p-1'>
+				<br>
+				<h3>My Point #3</h3>
+				<p>
+					hfa;hfg;aof;dfhgdfhg;odfhgoadfhg;ogfohdfghdsgherturhgdfhgsdkhfg
+				</p>
+				<img class='img-fluid p-3' src="images/image2.jpg" id="blogImage">
+			</section>
+		</div>
+		<hr>
+
+
+
+		<!-- CONTAINER: Wrap it Up -->
+		<div class='container-fluid p-1 a'>
+			<section class='container-fluid p-1'>
+				<h3>Parting Words...</h3>
+				<p>
+					hfa;hfg;aof;dfhgdfhg;odfhgoadfhg;ogfohdfghdsgherturhgdfhgsdkhfg
+				</p>
+				<br>
+			</section>
+		</div>
+		
+		<hr>
+		<hr>
+
+		<!------------------------------------------------------------------------------->
+		<!-- ENDING Section -->
+		<div class="container-xl p-1">
+			<section>
+				<h4>About Abby</h4>
+				<img src='images/abbyautin.jpeg' class="img-thumbnail float-left img-responsive" id="thumbnail">
+				<small>
+					<p id="aboutMeParagraph">This is about me...</p>
+				</small>
+			</section>
+		</div>
+
+
+		<!-- inserted the script tags from lab #3 -->
+		<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+		
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+
+
+
+	</body>
+
+</html>
+
