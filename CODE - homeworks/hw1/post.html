@@ -45,6 +45,8 @@
 
 		<link href="https://fonts.googleapis.com/css?family=Staatliches&display=swap" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Sulphur+Point&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Odibee+Sans&display=swap" rel="stylesheet">
 
 
         <!-- STYLE SHEET-->
@@ -52,7 +54,7 @@
 			
 			/*font specifically for large headers*/
 			h1{
-				font-family: 'Staatliches', cursive;
+				font-family: 'Odibee Sans', cursive;
 
 			}
 
@@ -70,12 +72,17 @@
 			}
 
 			div.a{
+				text-align: left;
+				padding-left: 35px;
+			}
+
+			div.b{
 				text-align: center;
 			}
 
 
 			#menuButton{
-				font-family: 'Sulphur Point', sans-serif;
+				font-family: 'Oswald', sans-serif;
 				padding-left: 45%
 
 			}
@@ -99,11 +106,15 @@
 
 
 			#BGlighter{
-				background-color: #f5f3ed
+				background-color: #f5f5f5
 			}
 
 			#aboutMeParagraph{
 				font-family: 'Pontano Sans', sans-serif;
+			}
+
+			.navbar-custom{
+				background-color: #1f1715
 			}
 		</style>
 	</head>
@@ -114,7 +125,7 @@
 
 		<!-- nav menu -->
 		
-		<nav class='navbar fixed-top navbar-expand-lg navbar-dark bg-dark' id="top-navbar">
+		<nav class='navbar fixed-top navbar-expand-lg navbar-custom' id="top-navbar">
 			<ul class="nav navbar-nav ml-auto">
 				<li id="menuButton"> <a href='#'> Home </a> </li>
 			</ul>
@@ -128,10 +139,10 @@
 			<section class='container-fluid p-3'>
 				<div>
 					<br>
-					<h1 class="p-4"> What does it mean to be a winner? </h1>
+					<h1 class="p-3"> Is Computer Science for Me? </h1>
 			
 
-					<img class="img-fluid" src='images/org.jpg'>
+					<img class="img-fluid" src='images/guy_computer.jpg'>
 
 				</div>
 			</section>
@@ -142,14 +153,13 @@
 
 
 		<!-- CONTAINER: Intro Paragraph -->
-		<div class='container-fluid p-1 a'>
+		<div class='container-fluid p-1 b'>
 			<section class='container-fluid p-1'>
-				<h3>So, this thing that's really important...</h3>
+				<h3>What am I motivated to learn in this program? </h3>
 				<p>
 					<br>
-					hfa;hfg;aof;dfhgdfhg;odffkjsdfglkdsjfgjsdfgjds;gsdjfgd;sfgjdsfgsd;fgjdsfghsdghdf;ghgoadfhg;ogfohdfghdsgherturhgdfhgsdkhfg
+					  
 
-					dfgsdfgsdfgsdfgsdfgsdfgsdfgsdfgdsfgsdfgsdfgsdgfdsfg
 				</p>
 		    </section>
 		</div>
@@ -159,12 +169,12 @@
 		<div class='container-fluid p-1 a' id="BGlighter">
 			<section class='container-fluid p-1'>
 				<br>
-				<h3>My Point #1</h3>
+				<h3>1. Tradeoffs</h3>
 				<p>
 					hfa;hfg;aof;dfhgdfhg;odfhgoadfhg;ogfohdfghdsgherturhgdfhgsdkhfg
 				</p>
 				
-				<img class='img-fluid p-3' src="images/pt1.png" id="blogImage">
+				<img class='img-fluid p-3' src="images/tradeoffGuy.jpg" id="blogImage">
 				
 			</section>
 		</div>
@@ -173,15 +183,15 @@
 
 
 		<!-- CONTAINER: 2nd Paragraph (topic) -->
-		<div class = 'container-fluid p-1 a'>
+		<div class = 'container-fluid p-1 a' id="BGlighter">
 			<section class='container-fluid p-1'>
 				<br>
-				<h3>My Point #2</h3>
+				<h3>2. Design</h3>
 				<p>
 					hfa;hfg;aof;dfhgdfhg;odfhgoadfhg;ogfohdfghdsgherturhgdfhgsdkhfg
 				</p>
 				
-				<img class='img-fluid p-3' src="images/image2.jpg" id="blogImage">
+				<img class='img-fluid p-3' src="images/Design.jpg" id="blogImage">
 			
 			</section>
 		</div>
@@ -193,11 +203,11 @@
 		<div class='container-fluid p-1 a' id="BGlighter">
 			<section class='container-fluid p-1'>
 				<br>
-				<h3>My Point #3</h3>
+				<h3>3. Implementation</h3>
 				<p>
 					hfa;hfg;aof;dfhgdfhg;odfhgoadfhg;ogfohdfghdsgherturhgdfhgsdkhfg
 				</p>
-				<img class='img-fluid p-3' src="images/image2.jpg" id="blogImage">
+				<img class='img-fluid p-3' src="images/businessMeeting.jpg" id="blogImage">
 			</section>
 		</div>
 		<hr>
@@ -205,7 +215,7 @@
 
 
 		<!-- CONTAINER: Wrap it Up -->
-		<div class='container-fluid p-1 a'>
+		<div class='container-fluid p-1 b'>
 			<section class='container-fluid p-1'>
 				<h3>Parting Words...</h3>
 				<p>

@@ -37,4 +37,7 @@ DAILIES:
 
 - Branding needs to be consistent on EVERY page connected to home
 
-
+=============
+2/10/20
+=============
+- the paragraph elements aren't scaling properly. Need to check this out. 
