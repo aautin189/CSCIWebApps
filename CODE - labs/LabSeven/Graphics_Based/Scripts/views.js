@@ -8,6 +8,7 @@ function printClue(status, guess){
 	document.getElementById("digit-100s").src = `./images/${digit100}.png`;
 	document.getElementById("digit-10s").src = `./images/${digit10}.png`;
 	document.getElementById("digit-1s").src = `./images/${digit1}.png`;
+	then = Date.now();
 }
 
 
