@@ -3,10 +3,11 @@ function printAttemptsRemaining(tries){
 	attemptsText.innerHTML = `Number of attempts left: ${tries}`;
 }
 
-function printClue(text){
-	let clueText = document.getElementById("clue");
-	let clue = status=='HI' ? `<li>${guess} is too high</li>`: `<li>${guess} is too low</li>`;
-	clueText.innerHTML += clue;
+function printClue(status, guess){
+	let [digit100, digit10, digit1] = status=='HI' ? ['H','I','-'] : ['L','O','-'];
+	document.getElementById("digit-100s").src = `./images/${digit100}.png`;
+	document.getElementById("digit-10s").src = `./images/${digit10}.png`;
+	document.getElementById("digit-1s").src = `./images/${digit1}.png`;
 }
 
 
