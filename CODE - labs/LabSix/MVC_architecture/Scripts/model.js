@@ -2,6 +2,7 @@
 
 let passcode = Math.floor(Math.random()*1000);
 let tries = 10;
+let guess = new Guess();
 
 
 function guessNumber(guess){
@@ -21,7 +22,7 @@ function guessNumber(guess){
 
 
 
-function giveClue(guess){
+function giveClue(status, guess){
 	if(guess > passcode){
 		printClue('HI', guess);
 		

@@ -3,7 +3,7 @@ function printAttemptsRemaining(tries){
 	attemptsText.innerHTML = `Number of attempts left: ${tries}`;
 }
 
-function printClue(status,guess){
+function printClue(text){
 	let clueText = document.getElementById("clue");
 	let clue = status=='HI' ? `<li>${guess} is too high</li>`: `<li>${guess} is too low</li>`;
 	clueText.innerHTML += clue;
@@ -18,4 +18,10 @@ function printGameOver(status){
 		var message = `<h1>You Lose!</h1> <p>The number was: ${passcode}</p>`;
 	}
 	document.body.innerHTML = message;
+}
+
+function printDigits(){
+	document.getElementById("digit-100s").value = guess.hundreds;
+	document.getElementById("digit-10s").value = guess.tens;
+	document.getElementById("digit-1s").value = guess.ones;
 }
