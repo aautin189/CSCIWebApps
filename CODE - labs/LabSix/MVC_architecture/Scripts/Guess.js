@@ -12,4 +12,8 @@ class Guess{
 	increment(key){
 		this[key] = (this[key] + 1) % 10;
 	}
+
+	decrement(key){
+		this[key] = this[key]>0 ? this[key]-1 : 9;
+	}
 }
