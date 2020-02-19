@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		
+	</head>
+
+	<body>
+		<p>There is a number between 000-999.</p>
+		<p id="attempts">Number of attempts left:</p>
+		<span>Enter a Guess: </span>
+
+		<div>
+			<img src="images/button-up.gif" id="up-100s" width="100"/>
+			<img src="images/button-up.gif" id="up-10s" width="100"/>
+			<img src="images/button-up.gif" id="up-1s" width="100"/>
+		</div>	
+
+
+
+
+		<div>
+			<input disabled type="number" min="0" max="9" value="0" id="digit-100s" >
+			<input disabled type="number" min="0" max="9" value="0" id="digit-10s" >
+			<input disabled type="number" min="0" max="9" value="0" id="digit-1s" >
+		</div>
+
+
+
+
+
+		<div>
+			<img scr="images/button-down.gif" id="down-100s" width="100"/>
+			<img scr="images/button-down.gif" id="down-10s" width="100"/>
+			<img scr="images/button-down.gif" id="down-1s" width="100"/>
+		</div>
+
+		<div>
+			<img src="images/button-enter.png" id="guess-button" width="300"/>
+		</div>
+
+		<ul id="clue"></ul>
+
+		<script src="Scripts/Guess.js"></script>
+		<script src="Scripts/views.js"></script>
+		<script src="Scripts/model.js"></script>
+		<script src="Scripts/controller.js"></script>
+	</body>
+
+
+</html>
