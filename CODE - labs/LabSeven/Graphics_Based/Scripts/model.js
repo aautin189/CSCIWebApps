@@ -1,22 +1,24 @@
 
 
 let passcode = Math.floor(Math.random()*1000);
-let tries = 10;
 let guess = new Guess();
 let then = Date.now();
+let timeleft = 30;
+let gameover = false;
 
 
 function guessNumber(guess){
-	tries--;
+	timeleft--;
 
 	if(guess == passcode){
+		gameover = true;
 		printGameOver('WIN');
 	}
-	else if(tries <= 0){
+	else if(timeleft <= 0 && gameover == false){
 		printGameOver('LOSE');
 	}
 	else{
-		printAttemptsRemaining(tries);
+		printAttemptsRemaining(timeleft);
 		giveClue(guess);
 	}
 }//END guessNumber function
