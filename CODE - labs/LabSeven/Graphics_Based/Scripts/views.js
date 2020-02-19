@@ -21,7 +21,8 @@ function printGameOver(status){
 }
 
 function printDigits(){
-	document.getElementById("digit-100s").value = guess.hundreds;
-	document.getElementById("digit-10s").value = guess.tens;
-	document.getElementById("digit-1s").value = guess.ones;
+	document.getElementById("digit-100s").src = `./images/${guess.hundreds}.png`;
+	document.getElementById("digit-10s").src = `./images/${guess.tens}.png`;
+	document.getElementById("digit-1s").src = `./images/${guess.ones}.png`;
+	
 }
