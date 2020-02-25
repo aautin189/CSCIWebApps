@@ -1,7 +1,7 @@
 Abby Autin
 CSCI 4208
-Lab #3
-January 28, 2020
+HW #2
+February 24, 2020
 
 
 ABOUT:
@@ -17,7 +17,9 @@ DAILIES:
 (2/24)
 
 - found a simpler implementation of accordion style on w3schools; applied it to the 'Skills' section of my home page. Just nested my existing content inside of that button element. 
+- inserted the "Try it Out" code from w3schools into its own html file (for later reference); file name == v2.html
 - updated README file; created like a backlog to track anything I think could be made better or anything that is still left to do
+
 
 ++++++++++++++++++++++++++
 
