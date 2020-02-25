@@ -9,6 +9,7 @@ let gameover = false;
 
 function guessNumber(guess){
 	timeleft--;
+	timeleft-=(Date.now()-then)/1000;
 
 	if(guess == passcode){
 		gameover = true;

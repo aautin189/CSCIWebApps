@@ -11,6 +11,7 @@ let down10s = document.getElementById("down-10s");
 let down1s = document.getElementById("down-1s");
 
 button.addEventListener("click", buttonEvent);
+
 up100s.addEventListener("click", function() { incrementEvent('hundreds') } );
 up10s.addEventListener("click", function() { incrementEvent('tens') } );
 up1s.addEventListener("click", function() { incrementEvent('ones') } );

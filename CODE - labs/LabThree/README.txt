@@ -13,5 +13,10 @@ We were able to insert/import (bootstrap) links into the HTML, which provided us
 This process was far less labor-intensive compared to manually writing CSS like we did in Lab 1. 
 
 
+NOTE:
+
+We styled our home page inside the HTML file using the Bootstrap library. 
+
+
 
 
