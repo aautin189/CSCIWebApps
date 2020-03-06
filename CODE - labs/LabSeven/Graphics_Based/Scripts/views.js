@@ -1,8 +1,14 @@
+
+
+// countdown clock
 function printAttemptsRemaining(){
 	let attemptsText = document.getElementById("attempts");
 	attemptsText.innerHTML = `Time Left: ${timeleft}`;
 }
 
+
+
+// will tell you if your guess was too high or too low
 function printClue(status, guess){
 	let [digit100,digit10,digit1] = status=='HI' ? ['H','I','-'] : ['L','O','-'];
 	document.getElementById("digit-100s").src = `./images/${digit100}.png`;
@@ -12,6 +18,8 @@ function printClue(status, guess){
 }
 
 
+
+// this message ends the game whether if you guessed it correctly or you ran out of time
 function printGameOver(status){
 	if (status === 'WIN'){
 		var message = `<h1>You Win! </h1> <p>Got it in ${30-timeleft} seconds. </p>`;
@@ -21,6 +29,9 @@ function printGameOver(status){
 	}
 	document.body.innerHTML = message;
 }
+
+
+
 
 function printDigits(){
 	document.getElementById("digit-100s").src = `./images/${guess.hundreds}.png`;
