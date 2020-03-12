@@ -16,8 +16,16 @@ Requies 3 helper functions
 */
 const postToGoogleDB = function(data){
 	const path = getPath(formId);
-	const url = getURL( path, data );
-	initRequest('POST', url);
+	const url = getURL(path, data);
+	sendRequest('POST',url)
+		.then(responseEvent);
+}
+
+
+const sendRequest=async function(verb,url){
+	const request=initRequest(verb,url);
+	const response=await fetch(request);
+	return response;
 }
 
 
@@ -27,7 +35,7 @@ Helper function, instantiate URL object & set data to its searchParams attribute
 const getURL = function(path, params){
 	const url = new URL(path);
 	for(let key in params){
-		url.seachParams.set(key, params[key]);
+		url.searchParams.set(key, params[key]);
 	}
 	return url;
 }
@@ -40,7 +48,13 @@ Sets form action with URL string & sets form method with the HTTP verb.
 Both passed in as parameters
 */
 const initRequest = function(verb, url){
-	const contactForm = document.getElementById('contact-form');
-	contactForm.action = url.toString();
-	contactForm.method = verb;
+	const init = new Object();
+		init.method = verb;
+		init.mode = 'no-cors';
+		return new Request(url,init);
 }
+
+
+
+const responseEvent=response=> alert('Success!');
+

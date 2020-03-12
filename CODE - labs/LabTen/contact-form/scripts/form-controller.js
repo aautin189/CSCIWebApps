@@ -3,8 +3,8 @@
 
 // initializes all controllers
 const initControllers = function(){
-	const contactForm = document.getElementById('contact-form');
-	contactForm.addEventListener('submit', submitEvent);
+	const submitButton = document.getElementById('submit');
+	submitButton.addEventListener('click', submitEvent);
 }
 
 
