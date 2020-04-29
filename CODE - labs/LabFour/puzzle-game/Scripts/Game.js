@@ -1,18 +1,15 @@
-//ALGORITHM
-
-// 1. Set passcode to show some integer value
-// 2. Prompt the player to enter a number and record it as the guess
-// 3. If the guess is the passcode
-	// 4. report that the player wins
-// 5. Else
-	// 6. Report that the player loses
 
 
+let passcode = Math.floor(Math.random()*1000);	// setting the passcode
+let tries = 10;	// user has 10 attempts
+let guess;	// the user's attempted value
 
-let passcode = Math.floor(Math.random()*1000);
-let tries = 10;
-let guess;
 
+/*
+GAME LOOP: 
+let's run the game as long as the user has tries left and 
+hasn't yet guessed correctly.
+*/
 while(tries > 0 && guess != passcode){
 	console.log("You have "+ tries + " guesses left.");
 	guess = prompt("Enter a number: ");
@@ -28,8 +25,15 @@ while(tries > 0 && guess != passcode){
 	else{
 		giveClue(guess);
 	}
-}// END while loop
+}
 
+
+
+
+/*
+FUNCTION:
+tells the user where they are relative to the correct answer
+*/
 
 function giveClue(guess){
 	if(guess > passcode){
@@ -38,7 +42,7 @@ function giveClue(guess){
 	else{
 		console.log(guess + " is too Low!");
 	}
-}// END giveClue function
+}
 
 
 

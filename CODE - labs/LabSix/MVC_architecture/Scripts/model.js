@@ -1,8 +1,10 @@
 
+// FILE: data and functions that manage the game logic 
 
-let passcode = Math.floor(Math.random()*1000);
-let tries = 10;
-let guess = new Guess();
+
+let passcode = Math.floor(Math.random()*1000);	// generate random number as the answer
+let tries = 10;	// how many attempts to guess the correct number?
+let guess = new Guess();	// create an instance of Guess
 
 
 function guessNumber(guess){

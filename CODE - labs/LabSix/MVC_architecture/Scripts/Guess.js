@@ -1,3 +1,6 @@
+// CLASS: a guess has a ones digit, a tens digit, and a hundreds digit
+
+
 class Guess{
 	constructor(){
 		this.hundreds = 0;
@@ -5,6 +8,8 @@ class Guess{
 		this.ones = 0;
 	}
 
+
+	// concatenate each digit of the value
 	toString(){
 		return "" + this.hundreds + this.tens + this.ones;
 	}

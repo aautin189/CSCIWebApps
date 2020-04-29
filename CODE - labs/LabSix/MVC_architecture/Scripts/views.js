@@ -1,10 +1,19 @@
+/*  output
+
+FILE: functions that manage the game's outputs 
+
+*/
+
+
+
+
 function printAttemptsRemaining(tries){
 	let attemptsText = document.getElementById("attempts");
 	attemptsText.innerHTML = `Number of attempts left: ${tries}`;
 }
 
 function printClue(text){
-	let clueText = document.getElementById("clue");
+	let clueText = document.getElementById("clue");	// ACCESS the feedback area
 	let clue = status=='HI' ? `<li>${guess} is too high</li>`: `<li>${guess} is too low</li>`;
 	clueText.innerHTML += clue;
 }
@@ -19,6 +28,8 @@ function printGameOver(status){
 	}
 	document.body.innerHTML = message;
 }
+
+
 
 function printDigits(){
 	document.getElementById("digit-100s").value = guess.hundreds;
