@@ -17,13 +17,15 @@ const routes = require('./routes/game.routes');		//export router as module
 app.use('/api/game', routes);						//app use routes on path: /api/game			
 
 
-app.use(localhostHandler);
-
 
 function localhostHandler(request,response,next){
 	response.header('Access-Control-Allow-Origin', '*');
 	next();
 }
+
+
+app.use(localhostHandler);
+
 
 
 app.listen(port);										//app listen on port
