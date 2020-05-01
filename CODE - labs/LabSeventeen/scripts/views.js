@@ -1,5 +1,13 @@
 
-
+//Function: overwrites the HTML view div
+const joinGameMenu = function(){
+	const view = document.getElementById('view');
+	const html = 	`<section>
+						Game ID: <input id = 'room-code' type=text value='GameID'>
+						<button id='find-game-button'>Join</button>
+					</section>`
+	view.innerHTML = html;
+}
 
 
 
@@ -13,7 +21,7 @@ const mainMenu = function(){
 								<button id = 'join-game-button'>Join Game</button>
 							</section>`;
 	view.innerHTML = html;
-	addController('new-game-button');
+	addController('new-game-button', 'join-game-button');
 
 }
 

@@ -4,6 +4,7 @@ const getCallbacks = function(){
 	const callbacks = {};
 	callbacks['new-game-button'] = newGameMenu;
 	callbacks['start-game-button'] = startGame;
+	callbacks['join-game-button'] = joinGameMenu;
 	return callbacks;
 }
 
