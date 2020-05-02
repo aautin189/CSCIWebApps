@@ -11,6 +11,20 @@ const joinGameMenu = function(){
 }
 
 
+//Function: method that renders HTML into the view
+const gameOverMenu = function(result){
+	const view = document.getElementById('view');
+	const html =		`<section>
+							<h3>Game ID: ${gameID}</h3>
+							<p>Game Over: ${result}</p>
+							<button id='reset-game-button'>Replay</button>
+							<button id='quit-game-button'>Main Menu</button>
+						</section>`
+	view.innerHTML = html;
+	addController('reset-game-button');
+}
+
+
 //Function: adds a clue to the game view's clue list
 const viewClue = function(clue,guess){
 	clueList = document.getElementById('clues-list');
@@ -56,5 +70,6 @@ const viewGame = function(){
 				     </section>`
 	view.innerHTML = html;
 	addController('submit-guess-button');
+	if(gameover) gameOverMenu('You Lose!');
 }
 

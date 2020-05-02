@@ -7,6 +7,7 @@ const getCallbacks = function(){
 	callbacks['join-game-button'] = joinGameMenu;
 	callbacks['find-game-button'] = findGame;
 	callbacks['submit-guess-button'] = submitGuess;
+	callbacks['reset-game-button'] = resetGame;
 	return callbacks;
 }
 

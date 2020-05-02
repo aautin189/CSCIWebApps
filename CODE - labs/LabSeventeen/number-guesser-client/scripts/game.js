@@ -13,6 +13,15 @@ async function startGame(){
 }
 
 
+
+//Function: requests to reset game and then update game view
+async function resetGame(){
+	const url = `http://localhost:3000/api/game/${gameID}/reset`;
+	const response = await fetch(url);
+	await response.json().then(viewGame);
+}
+
+
 //Function: request backend to submit a guess
 async function submitGuess(){
 	const guess = getGuess();
@@ -22,8 +31,8 @@ async function submitGuess(){
 
 	if(data.success){
 		switch(data.guess){
-			case "correct": alert("You Win!"); break;
-			case "gameover": alert("You Lose!"); break;
+			case "correct": gameOverMenu("You Win!"); break;
+			case "gameover": gameOverMenu("You Lose!"); break;
 			default: viewClue(data.guess, guess);
 		}
 	}
