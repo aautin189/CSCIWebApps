@@ -8,6 +8,7 @@ const getCallbacks = function(){
 	callbacks['find-game-button'] = findGame;
 	callbacks['submit-guess-button'] = submitGuess;
 	callbacks['reset-game-button'] = resetGame;
+	callbacks['quit-game-button'] = mainMenu;
 	return callbacks;
 }
 

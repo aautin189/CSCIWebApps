@@ -21,7 +21,8 @@ const gameOverMenu = function(result){
 							<button id='quit-game-button'>Main Menu</button>
 						</section>`
 	view.innerHTML = html;
-	addController('reset-game-button');
+	addController('reset-game-button', 'quit-game-button');
+
 }
 
 
