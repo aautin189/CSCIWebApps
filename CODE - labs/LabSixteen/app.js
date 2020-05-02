@@ -12,19 +12,19 @@ app.use(bodyParser.json());							//use body parser to read json
 app.use(bodyParser.urlencoded({extended:false}));	//use body parser to read url
 
 
-// STEP 3
-const routes = require('./routes/game.routes');		//export router as module
-app.use('/api/game', routes);						//app use routes on path: /api/game			
-
-
-
 function localhostHandler(request,response,next){
 	response.header('Access-Control-Allow-Origin', '*');
 	next();
 }
 
 
+// STEP 3
 app.use(localhostHandler);
+const routes = require('./routes/game.routes');		//export router as module
+app.use('/api/game', routes);						//app use routes on path: /api/game			
+
+
+
 
 
 

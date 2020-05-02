@@ -7,6 +7,7 @@ const joinGameMenu = function(){
 						<button id='find-game-button'>Join</button>
 					</section>`
 	view.innerHTML = html;
+	addController('find-game-button');
 }
 
 
@@ -40,6 +41,14 @@ const newGameMenu = function(){
 
 //Function: view game
 const viewGame = function(){
-	console.log(gameID, min, max);
+	const view = document.getElementById('view');
+	const html = 	`<section>
+						<h3>Game ID: ${gameID}</h3>
+						<p> Min: ${min} Max: ${max} </p>
+						<input type=number id='guess-input'>
+						<button id='submit-guess-button'>Submit</button>
+						<ul id='clues-list'></ul>
+				     </section>`
+	view.innerHTML = html;
 }
 

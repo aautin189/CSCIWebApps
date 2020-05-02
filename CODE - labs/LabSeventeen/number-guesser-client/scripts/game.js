@@ -11,3 +11,21 @@ async function startGame(){
 	gameID = data.gameID;
 	viewGame();
 }
+
+
+
+//Function: request backend to get game data
+async function findGame(){
+	gameID = getGameID();
+	const response = await fetch(`http://localhost:3000/api/game/${gameID}`);
+	const data = await response.json();
+	if(data.success){
+		min = data.start;
+		max = data.end;
+		gameover = data.gameover;
+		viewGame();
+	}
+	else{
+		mainMenu();
+	}
+}

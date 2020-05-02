@@ -5,8 +5,13 @@ const getCallbacks = function(){
 	callbacks['new-game-button'] = newGameMenu;
 	callbacks['start-game-button'] = startGame;
 	callbacks['join-game-button'] = joinGameMenu;
+	callbacks['find-game-button'] = findGame;
 	return callbacks;
 }
+
+
+//Function: get existing game's ID value from html input
+const getGameID = () => document.getElementById('room-code').value;
 
 
 //Function: takes variable number of button IDs & sets their event listeners
