@@ -6,8 +6,13 @@ const getCallbacks = function(){
 	callbacks['start-game-button'] = startGame;
 	callbacks['join-game-button'] = joinGameMenu;
 	callbacks['find-game-button'] = findGame;
+	callbacks['submit-guess-button'] = submitGuess;
 	return callbacks;
 }
+
+
+//Function: get the user's guess value from HTML input
+const getGuess = () => document.getElementById('guess-input').value;
 
 
 //Function: get existing game's ID value from html input

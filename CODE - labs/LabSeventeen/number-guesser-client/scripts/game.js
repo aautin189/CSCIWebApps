@@ -13,6 +13,23 @@ async function startGame(){
 }
 
 
+//Function: request backend to submit a guess
+async function submitGuess(){
+	const guess = getGuess();
+	const url = `http://localhost:3000/api/game/${gameID}/guess?guess=${guess}`;
+	const response = await fetch(url);
+	const data = await response.json();
+
+	if(data.success){
+		switch(data.guess){
+			case "correct": alert("You Win!"); break;
+			case "gameover": alert("You Lose!"); break;
+			default: viewClue(data.guess, guess);
+		}
+	}
+}
+
+
 
 //Function: request backend to get game data
 async function findGame(){

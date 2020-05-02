@@ -11,6 +11,11 @@ const joinGameMenu = function(){
 }
 
 
+//Function: adds a clue to the game view's clue list
+const viewClue = function(clue,guess){
+	clueList = document.getElementById('clues-list');
+	clueList.innerHTML += `<li>${guess} is ${clue}</li>`
+}
 
 
 
@@ -50,5 +55,6 @@ const viewGame = function(){
 						<ul id='clues-list'></ul>
 				     </section>`
 	view.innerHTML = html;
+	addController('submit-guess-button');
 }
 
